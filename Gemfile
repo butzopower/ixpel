@@ -5,6 +5,8 @@ gem 'jquery-rails'
 
 gem 'sqlite3'
 
+gem "encounters", path: "dependencies/encounters"
+
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
