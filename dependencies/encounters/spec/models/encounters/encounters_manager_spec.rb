@@ -5,7 +5,7 @@ describe Encounters::EncountersManager do
     # NOOP since we don't persist encounters yet
   end
 
-  it "can get encounters" do
+  it "can get all encounters" do
     seed_encounters
 
     encounter_manager = Encounters::EncountersManager.new
@@ -16,8 +16,6 @@ describe Encounters::EncountersManager do
 
   context "encounter exists" do
     it "can get the individual encounter" do
-      seed_encounters
-
       seed_encounters
 
       encounter_manager = Encounters::EncountersManager.new
