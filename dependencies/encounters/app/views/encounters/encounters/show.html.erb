@@ -1,1 +1,2 @@
 <%= @encounter.monster.name %>
+<%= button_to "Attack", encounter_monster_attacks_path(@encounter.id, @encounter.monster.id) %>

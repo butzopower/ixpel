@@ -1,5 +1,5 @@
-require_relative 'encounter'
-require_relative 'monster'
+require_relative "encounter"
+require_relative "monster"
 
 module Encounters
   class EncountersManager
@@ -17,7 +17,7 @@ module Encounters
     def encounters
       [Encounter.new(id: 1,
                      call_to_action: "Fight the Skeleton",
-                     monster: Monster.new(name: "Skeleton")
+                     monster: Monster.new(id: 1, name: "Skeleton")
        )]
     end
 
